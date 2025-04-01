@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundSphere - A music player</title>
+  <link rel="stylesheet" href="../spotify-css/spotify.css">
+  <link rel="stylesheet" href="../spotify-css/utility.css">
+</head>
+
+<body>
+  <header>
+    <nav class="flex">
+      <div class="hamburger-spotify">
+        <img class="hamburger invert" src="../spotify-img/more.png" alt="">
+        <img id="spotify-icon" class="cursor invert icon" src="../spotify-img/logo.svg" alt="">
+      </div>
+      <div class="nav-mid flex">
+        <div class="home">
+          <img id="home-icon" class="cursor invert icon" src="../spotify-img/home.png" alt="">
+        </div>
+        <div class="search-bar flex">
+          <img class="search-icon invert icon" src="../spotify-img/search.svg" alt="">
+          <input type="text" placeholder="What do you want to play?">
+        </div>
+      </div>
+
+      <div class="noti-profile flex">
+        <img class="cursor invert icon noti-icon" src="../spotify-img/notification.svg" alt="">
+        <div class="profile">
+          N
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="out left">
+      <div class="cursor left-head">
+        <img class="invert library-icon icon" src="../spotify-img/library.svg" alt="">
+        <h2>Your library</h2>
+      </div>
+      <div class="song-list">
+        <ul class="song-list-ul">
+
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <h2>Albums</h2>
+      <div class="card-container">
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="song-name">
+
+    </div>
+    <div class="song-operations">
+      <div class="basic-operations">
+        <div class="cursor prev">
+          <img class="invert" src="../spotify-img/previous.png" alt="">
+        </div>
+        <div class="cursor play">
+          <img class=" invert play-img" src="../spotify-img/hover_play.svg" alt="">
+        </div>
+        <div class="cursor next">
+          <img class="invert" src="../spotify-img/next.png" alt="">
+        </div>
+      </div>
+      <div class="cursor seekbar">
+        <div class="curr-time">00:00</div>
+
+        <div class="seek">
+          <div class="circle"></div>
+        </div>
+
+        <div class="total-time">00:00</div>
+      </div>
+    </div>
+    <div class="cursor volume">
+      <img class="invert volume-icon" src="../spotify-img/volume-up.png" alt="">
+      <input class = "vol" type="range">
+    </div>
+  </footer>
+
+  <script src="../spotify-js/spotify.js"></script>
+</body>
+
+</html>
